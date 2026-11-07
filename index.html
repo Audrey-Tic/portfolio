@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcf5ed">
+  <meta name="description" content="Audrey Tichit, Product Owner et consultante analytics. Expériences professionnelles, missions bénévoles, formations et certifications.">
+  <meta property="og:title" content="Audrey Tichit — Product Owner & Analytics">
+  <meta property="og:description" content="Expériences en product ownership, analytics, marketing digital et conduite du changement depuis 2014.">
+  <meta property="og:type" content="website">
+  <title>Audrey Tichit — Product Owner & Analytics</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./theme.css">
+  <script src="./experiences.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="header">
+    <a class="wordmark" href="#introduction" aria-label="Audrey Tichit, accueil">audrey<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">＋</span></button>
+    <nav id="navigation" class="navigation" aria-label="Navigation principale">
+      <a href="#introduction" aria-current="location">Introduction</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#benevolat">Bénévolat</a>
+      <a href="#formation">Formation</a>
+      <a href="#a-propos">À propos</a>
+    </nav>
+    <a class="header-contact" href="https://www.linkedin.com/in/audrey-tichit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only">, nouvel onglet</span></a>
+  </header>
+
+  <main id="contenu">
+    <section class="hero section" id="introduction" aria-labelledby="hero-title">
+      <div class="hero-main">
+        <p class="eyebrow">PORTFOLIO PROFESSIONNEL</p>
+        <h1 id="hero-title">Audrey Tichit</h1>
+        <p class="hero-role">Product Owner<br>& consultante analytics</p>
+        <p class="hero-description">J’interviens sur le cadrage de produits digitaux, l’analyse des parcours utilisateurs, la mesure de performance, le marketing digital et la conduite du changement.</p>
+        <a class="button button-dark" href="#experiences">Voir les expériences <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-window"><img src="./assets/audrey.jpg" alt="Portrait d’Audrey Tichit" width="1860" height="2599" fetchpriority="high"></div>
+      </div>
+      <div class="hero-footnote"><span><strong>10+</strong> ans d’expérience digitale</span><span><strong>2014</strong> début du parcours professionnel</span><a href="#experiences">Expériences <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="expertise-band" aria-label="Mes domaines d’intervention">
+      <p>Product ownership <span aria-hidden="true">·</span> Web analytics <span aria-hidden="true">·</span> Marketing digital <span aria-hidden="true">·</span> Conduite du changement</p>
+    </section>
+
+    <section id="experiences" class="section experiences-section" aria-labelledby="experiences-title">
+      <div class="section-heading"><div><p class="eyebrow">01 — EXPÉRIENCES</p><h2 id="experiences-title">Expériences professionnelles</h2></div><p>Rôles, contextes, interventions et outils mobilisés pour chaque mission.</p></div>
+      <div class="experience-toolbar">
+        <div class="filters" role="group" aria-label="Filtrer les expériences par domaine"><button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Tous les domaines</button><button type="button" class="filter" data-filter="product" aria-pressed="false">Produit & UX</button><button type="button" class="filter" data-filter="data" aria-pressed="false">Data & analytics</button><button type="button" class="filter" data-filter="change" aria-pressed="false">Change</button><button type="button" class="filter" data-filter="marketing" aria-pressed="false">Marketing & SEO</button></div>
+        <div class="market-row"><div class="market-field"><label for="market-filter">Marché</label><select id="market-filter"><option value="all">Tous les marchés</option></select></div><button id="reset-filters" type="button" class="reset-filters" hidden>Réinitialiser les filtres</button><p id="experience-count" class="result-count" aria-live="polite" aria-atomic="true"></p></div>
+      </div>
+      <div id="experience-list" class="experience-list"></div>
+      <p id="empty-experiences" class="empty-state" hidden>Aucune expérience ne correspond à ces deux filtres. Sélectionnez un autre domaine ou un autre marché.</p>
+      <noscript><p>Pour parcourir le détail des missions, activez JavaScript. J’ai notamment accompagné Airbus, Cegid, Desjardins, l’ANCV, la Macif, Royal Canin, BMW et Atos sur des projets produit, analytics, marketing et change. <a href="https://www.linkedin.com/in/audrey-tichit/">Retrouvez mon parcours sur LinkedIn.</a></p></noscript>
+      <div class="show-more-wrap"><button id="show-more" class="button button-outline" type="button" aria-expanded="false" aria-controls="experience-list" hidden>Voir tout le parcours <span aria-hidden="true">＋</span></button><p class="small-note">Certaines missions ont été menées en parallèle.</p></div>
+      <aside class="toolbox"><p class="eyebrow">OUTILS UTILISÉS</p><p>Adobe Analytics <span>·</span> GA4 <span>·</span> GTM <span>·</span> Contentsquare <span>·</span> AEM <span>·</span> Adobe Campaign <span>·</span> Salesforce <span>·</span> Power BI <span>·</span> Looker <span>·</span> Jira <span>·</span> Miro</p></aside>
+    </section>
+
+    <section id="benevolat" class="section volunteering-section" aria-labelledby="volunteering-title">
+      <div class="section-heading"><div><p class="eyebrow">02 — BÉNÉVOLAT</p><h2 id="volunteering-title">Missions bénévoles</h2></div><p>Accompagnement de Paris Mozart Orchestra et d’Orchestre à l’école en communication digitale et analytics.</p></div>
+      <div id="volunteering-list" class="experience-list"></div>
+      <noscript><p>Orchestre à l’école : accompagnement analytics en 2023. Paris Mozart Orchestra : stratégie de communication digitale en 2021.</p></noscript>
+    </section>
+
+    <section id="formation" class="formation-section" aria-labelledby="formation-title"><div class="section">
+      <div class="section-heading"><div><p class="eyebrow">03 — FORMATION</p><h2 id="formation-title">Formation et certifications</h2></div><p>École d’ingénieur, école de commerce et classe préparatoire B/L.</p></div>
+      <div class="education-grid"><div class="education"><h3 class="subheading">Formation <span aria-hidden="true">↙</span></h3>
+        <article class="education-row"><span class="education-date">2015</span><div><h4>MSc Digital Marketing</h4><p>INSEEC · Paris</p><span class="education-note">École de commerce</span></div></article>
+        <article class="education-row"><span class="education-date">2011 — 2014</span><div><h4>Ingénierie · UX & sciences cognitives</h4><p>Institut Polytechnique de Bordeaux</p><span class="education-note">École d’ingénieur</span></div></article>
+        <article class="education-row"><span class="education-date">2009 — 2011</span><div><h4>Hypokhâgne / Khâgne B/L</h4><p>Lycée Alphonse Daudet · Nîmes</p><span class="education-note">Classe préparatoire aux grandes écoles</span></div></article>
+      </div><div class="certifications"><h3 class="subheading">Certifications <span aria-hidden="true">✳</span></h3>
+        <ul class="certification-list"><li><span class="certification-check" aria-hidden="true">✓</span><div><h4>Professional Scrum Product Owner</h4><p>Produit & agilité</p></div></li><li><span class="certification-check" aria-hidden="true">✓</span><div><h4>Google Analytics 4 & Adobe Analytics</h4><p>Mesure & analyse</p></div></li><li><span class="certification-check" aria-hidden="true">✓</span><div><h4>Adobe Campaign</h4><p>Marketing automation</p></div></li><li><span class="certification-check" aria-hidden="true">✓</span><div><h4>Content Marketing & SEO</h4><p>Contenu & visibilité</p></div></li></ul>
+      </div></div>
+    </div></section>
+
+    <section id="a-propos" class="section about-section" aria-labelledby="about-title">
+      <div class="section-heading"><div><p class="eyebrow">04 — À PROPOS</p><h2 id="about-title">Centres d’intérêt</h2></div></div>
+      <div class="passions-grid">
+        <article class="passion passion-badminton"><div class="passion-art" aria-hidden="true"><svg viewBox="0 0 240 150"><g transform="rotate(32 120 75)"><ellipse cx="110" cy="56" rx="29" ry="38"/><ellipse cx="110" cy="56" rx="23" ry="32"/><path d="M110 94v41M104 123h12M93 30v52m11-57v62m12-62v62m11-57v52M87 43h46M86 56h48M87 69h46"/></g><path d="m174 30 26-12-8 28-16 3zM176 30l16 16m-7-20 6 20m-17-16 26-12"/><path d="M178 49q-4 9 3 10t10-13"/></svg></div><span class="passion-number">01 /</span><h3>Badminton</h3></article>
+        <article class="passion passion-ski"><div class="passion-art" aria-hidden="true"><svg viewBox="0 0 240 150"><path d="m20 125 63-92 37 56 29-43 73 79M63 62l20 14 12-10M133 70l17 12 12-13M94 125l26-36M30 136h180"/><path d="M188 21v17m-8-9h17m-14-6 11 12m0-12-11 12"/></svg></div><span class="passion-number">02 /</span><h3>Ski</h3></article>
+        <article class="passion passion-games"><div class="passion-art" aria-hidden="true"><svg viewBox="0 0 240 150"><g transform="rotate(-14 93 75)"><rect x="51" y="37" width="78" height="78" rx="13"/><circle cx="72" cy="58" r="4"/><circle cx="108" cy="58" r="4"/><circle cx="90" cy="76" r="4"/><circle cx="72" cy="94" r="4"/><circle cx="108" cy="94" r="4"/></g><path d="M162 112h36l-8-40h-20zM167 68q-10-20 13-25 23 5 13 25zM161 119h38M148 28l4-8m53 26 9-3m-61 11-10-3"/></svg></div><span class="passion-number">03 /</span><h3>Jeux de société</h3></article>
+        <article class="passion passion-sewing"><div class="passion-art" aria-hidden="true"><svg viewBox="0 0 240 150"><path d="M64 38q45-20 77 0v78q-36 20-77 0zM58 35q45-19 89 0M58 120q45 19 89 0M68 49l70 20m-70-7 70 20m-70-7 70 20m-70-7 70 20M164 103l36-76q7-9 9 4l-38 75zM201 35l3-6M169 106q13 40 39 12"/></svg></div><span class="passion-number">04 /</span><h3>Couture</h3></article>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-title"><div class="section contact-inner"><h2 id="contact-title">Contact</h2><a class="button button-light" href="https://www.linkedin.com/in/audrey-tichit/" target="_blank" rel="noopener noreferrer">Me contacter sur LinkedIn <span aria-hidden="true">↗</span><span class="sr-only">, nouvel onglet</span></a></div></section>
+  </main>
+  <footer class="footer section"><a class="wordmark" href="#introduction">audrey<span>.</span><span class="sr-only"> — retour à l’accueil</span></a><p>© <span id="year">2026</span> Audrey Tichit</p><a href="#introduction" class="back-top">Retour en haut <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

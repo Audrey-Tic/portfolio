@@ -1,0 +1,156 @@
+/* Palette chaude et présentation des clients, sans ressource externe. */
+:root {
+  --paper: #fcf5ed;
+  --ink: #3e302c;
+  --muted: #73645c;
+  --accent: #a64935;
+  --line: #e9dcd0;
+  --sage: #eceddf;
+  --white: #fffcf8;
+}
+.header { background: #fcf5edf5; }
+.navigation > a { font-size: 13px; }
+.navigation > a:hover, .navigation > a[aria-current] { color: var(--accent); }
+.hero-main > .eyebrow { color: var(--accent); }
+.hero-description { font-size: 15px; }
+.hero .hero-visual { height: 450px; padding: 12px; border-radius: 180px 180px 26px 26px; background: #f3ddcd; box-shadow: 10px 12px 0 #f3e6d9; }
+.button { border-radius: 14px; font-size: 13px; transition: background .2s, transform .2s, box-shadow .2s; }
+.button:hover { box-shadow: 0 7px 18px #7b493414; }
+.button-dark { background: var(--accent); }
+.button-dark:hover { background: #913b29; }
+.button-outline { color: var(--accent); border-color: #c9a78d; }
+.button-outline:hover { background: #f5e5d5; }
+.hero-footnote { font-size: 12px; }
+.hero-footnote strong { color: var(--accent); font-size: 28px; }
+.expertise-band { background: #f4e4d5; border-color: #edcdb8; }
+.section-heading > p { font-size: 14px; }
+.experience-toolbar { padding: 22px 24px; margin-bottom: 24px; border: 1px solid var(--line); background: #f8ecdf; border-radius: 18px; }
+.filter { font-size: 12px; padding: 9px 16px; min-height: 40px; border-color: #d9cabc; background: #fffcf880; }
+.filter.is-active { background: var(--accent); border-color: var(--accent); color: var(--white); }
+.filter:hover { border-color: var(--accent); }
+.market-field select { border-color: #d9cabc; border-radius: 10px; }
+.market-row .result-count, .reset-filters { font-size: 12px; }
+.experience-list { display: grid; gap: 13px; }
+.experience-card { border: 1px solid var(--line); border-radius: 18px; background: var(--white); overflow: clip; box-shadow: 0 3px 12px #71492e04; transition: border-color .2s, box-shadow .2s; }
+.experience-card:hover { border-color: #d4b39c; box-shadow: 0 5px 18px #71492e0a; }
+.experience-card[open] { border-color: #c8997b; box-shadow: 0 8px 24px #71492e0b; }
+.experience-summary { grid-template-columns: 96px minmax(0, 1fr) 245px 34px; gap: 22px; padding: 24px; border-radius: 18px; }
+.experience-summary:hover { background: #faf0e7; }
+.experience-summary:focus-visible { outline-offset: -5px; }
+.company-mark { height: 62px; width: 96px; border-radius: 12px; overflow: hidden; }
+.company-mark.has-logo { background: #fff; border: 1px solid #f0e7df; padding: 9px; }
+.client-logo { width: 100%; height: 100%; object-fit: contain; }
+.company-line { flex-wrap: wrap; }
+.company-line h3 { font-size: 18px; line-height: 1.4; }
+.current-badge { font-size: 10px; }
+.experience-role { font-size: 13px; margin-top: 4px; line-height: 1.5; }
+.experience-period { font-size: 12px; }
+.experience-category { font-size: 11px; }
+.experience-toggle { border-color: #e0cabb; background: #fcf2e9; }
+.experience-toggle::before, .experience-toggle::after { background: var(--accent); }
+.experience-card[open] .experience-toggle { background: var(--accent); border-color: var(--accent); }
+.experience-body { padding: 4px 30px 30px; }
+.mission-lead { font-size: 26px; margin-bottom: 26px; }
+.detail-heading { font-size: 11px; margin-bottom: 12px; }
+.mission-context > p, .task-list { font-size: 14px; line-height: 1.9; }
+.task-list li { margin-bottom: 9px; }
+.tool-tags li { font-size: 11px; border-color: #e9dacb; padding: 4px 10px; border-radius: 7px; background: #fcf3e9; }
+.mission-outcome { font-size: 14px; line-height: 1.85; border-left: 3px solid #7b895f; border-radius: 0 10px 10px 0; }
+.project-heading h4 { font-size: 25px; }
+.project-heading p, .small-note { font-size: 12px; }
+.toolbox > p:last-child { font-size: 13px; }
+.volunteering-section .experience-list { border-top: 0; }
+.formation-section { border-radius: 40px 40px 0 0; }
+.education-row h4, .certification-list h4 { font-size: 14px; }
+.education-date, .education-note, .certification-list p { font-size: 12px; }
+.education-row p { font-size: 13px; }
+.certification-check { background: #f7f7ed; }
+.passion { border-color: #e3d3c3; border-radius: 100px 100px 22px 22px; padding-bottom: 28px; }
+.passion-badminton { background: #e9e9d6; color: #667247; }
+.passion-ski { background: #e7ece9; color: #637b78; }
+.passion-games { background: #f5e2c5; color: #a06b35; }
+.passion-sewing { background: #f1d9cc; color: #ac654d; }
+.passion h3 { font-size: 25px; }
+.contact-section { background: #814b3d; color: #fff8ee; border-radius: 38px 38px 0 0; }
+.contact-inner { padding-block: 48px 54px; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
+.contact-inner h2 { margin-bottom: 0; }
+.button-light { background: #fff4e7; color: #744434; }
+.button-light:hover { background: #ffe9d0; }
+.footer p, .back-top { font-size: 12px; }
+
+@media (max-width: 1100px) {
+  .hero .hero-visual { height: 400px; }
+  .hero-description { font-size: 14px; }
+  .hero-footnote { gap: 30px; font-size: 11px; }
+  .experience-summary { grid-template-columns: 84px minmax(0, 1fr) 200px 30px; gap: 16px; padding: 21px; }
+  .company-mark { width: 84px; height: 58px; }
+  .experience-period { font-size: 11px; }
+  .experience-category { font-size: 10px; }
+  .education-row { grid-template-columns: 95px 1fr; gap: 12px; }
+  .passion h3 { font-size: 23px; }
+}
+@media (max-width: 900px) {
+  .navigation > a { font-size: 12px; }
+  .hero .hero-visual { height: 365px; }
+  .hero-description { font-size: 13px; }
+  .hero-footnote { gap: 15px; }
+  .hero-footnote strong { font-size: 25px; }
+  .experience-summary { grid-template-columns: 76px minmax(0, 1fr) 165px 30px; gap: 13px; padding: 18px; }
+  .company-mark { width: 76px; height: 54px; }
+  .company-line h3 { font-size: 17px; }
+  .experience-role { font-size: 12px; }
+  .experience-period { font-size: 10px; }
+  .experience-body { padding-inline: 24px; }
+  .education-row { grid-template-columns: 76px 1fr; gap: 9px; }
+  .education-date { font-size: 10px; }
+  .education-row h4, .certification-list h4 { font-size: 13px; }
+  .passion h3 { font-size: 21px; }
+}
+@media (max-width: 760px) {
+  .navigation > a { font-size: 14px; }
+  .menu-toggle { border-color: #dcc3af; background: #fff9f1; font-size: 12px; }
+  .hero-description { font-size: 14px; }
+  .hero .hero-visual { width: min(100% - 8px, 360px); height: 410px; padding: 9px; border-radius: 160px 160px 23px 23px; box-shadow: 7px 8px 0 #f0e1d3; }
+  .hero-footnote > span { font-size: 11px; }
+  .section-heading > p { font-size: 14px; }
+  .experience-toolbar { padding: 16px; border-radius: 16px; margin-bottom: 18px; }
+  .filter { font-size: 11px; padding: 8px 12px; min-height: 38px; }
+  .market-field select, .market-row .result-count, .reset-filters { font-size: 11px; }
+  .experience-card { border-radius: 15px; }
+  .experience-summary { grid-template-columns: 64px minmax(0, 1fr) 28px; gap: 12px; padding: 18px 15px; }
+  .company-mark { width: 64px; height: 48px; border-radius: 9px; grid-row: 1 / 3; align-self: start; }
+  .company-mark.has-logo { padding: 6px; }
+  .company-line h3 { font-size: 16px; }
+  .current-badge { font-size: 9px; }
+  .experience-meta { margin-top: -5px; }
+  .experience-period, .experience-category { font-size: 10px; }
+  .experience-body { padding: 2px 18px 24px; }
+  .mission-lead { font-size: 23px; }
+  .detail-heading { font-size: 10px; }
+  .tool-tags li { font-size: 10px; }
+  .mission-outcome { font-size: 13px; padding: 15px; }
+  .project-heading h4 { font-size: 23px; }
+  .project-heading p { font-size: 11px; }
+  .education-row { grid-template-columns: 90px 1fr; }
+  .education-date { font-size: 11px; }
+  .education-row h4, .certification-list h4 { font-size: 14px; }
+  .formation-section { border-radius: 26px 26px 0 0; }
+  .passion { border-radius: 90px 90px 17px 17px; }
+  .passion h3 { font-size: 22px; }
+  .contact-section { border-radius: 25px 25px 0 0; }
+  .contact-inner { padding-block: 35px 40px; display: block; }
+  .contact-inner h2 { margin-bottom: 25px; }
+  .button { font-size: 12px; }
+  .footer p, .back-top { font-size: 11px; }
+}
+@media (max-width: 380px) {
+  .experience-summary { grid-template-columns: 50px minmax(0, 1fr) 26px; gap: 10px; padding-inline: 12px; }
+  .company-mark { width: 50px; height: 44px; }
+  .company-line h3 { font-size: 15px; }
+  .passion h3 { font-size: 20px; }
+  .education-row { grid-template-columns: 76px 1fr; }
+  .education-date { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+}
