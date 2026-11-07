@@ -33,3 +33,7 @@ Chaque push sur `main` déclenche le workflow `.github/workflows/deploy-pages.ym
 GitHub Pages utilise **GitHub Actions** comme source de publication dans **Settings → Pages → Build and deployment**. Aucun secret supplémentaire ni installation de dépendances n’est nécessaire.
 
 Les chemins sont relatifs : le site fonctionne sous `/portfolio/`. Seuls les fichiers de la page et le dossier `assets` sont publiés ; les outils de prévisualisation et le README restent dans le dépôt. Le fichier `.nojekyll` permet de servir les fichiers tels quels.
+
+## Indexation
+
+La page contient une balise robots `noindex, nofollow, noimageindex` pour demander aux moteurs de recherche de ne pas l’indexer. Aucun blocage par `robots.txt` n’est ajouté : les moteurs doivent pouvoir lire cette consigne. Le site reste public et accessible par son lien ; une éventuelle désindexation prend effet après un nouveau passage du moteur.
