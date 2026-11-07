@@ -1,7 +1,7 @@
 /* Palette chaude et présentation des clients, sans ressource externe. */
 .employer-card { padding: 30px; margin-bottom: 20px; border: 1px solid #d9b9a1; border-radius: 20px; background: #f7e8da; }
 .employer-heading { display: flex; align-items: center; gap: 22px; margin-bottom: 26px; }
-.employer-logo { width: 110px; height: 78px; padding: 14px; background: #fff; border-radius: 13px; flex-shrink: 0; }
+.employer-logo { display: flex; align-items: center; justify-content: center; width: 110px; height: 78px; padding: 14px; background: #fff; border-radius: 13px; flex-shrink: 0; }
 .employer-logo img { width: 100%; height: 100%; object-fit: contain; }
 .employer-heading .eyebrow { font-size: 10px; color: var(--accent); }
 .employer-heading h3 { font-family: var(--serif); font-size: 31px; line-height: 1.3; font-weight: 400; }
@@ -12,8 +12,18 @@
 .experience-kind { color: var(--accent); font-size: 9px; letter-spacing: 1.4px; text-transform: uppercase; margin-bottom: 4px; }
 .certification-logo { width: 64px; height: 64px; flex-shrink: 0; display: grid; place-items: center; }
 .certification-logo img { width: 100%; height: 100%; object-fit: contain; }
-.certification-list > .sst-certification { margin-top: 18px; background: #fff; border: 1px solid #d8d9c9; border-radius: 14px; padding: 18px; gap: 18px; box-shadow: 0 4px 12px #4c574608; }
-.sst-certification .certification-logo { width: 76px; height: 76px; padding: 6px; background: #fff; }
+.certification-list > .sst-certification { gap: 18px; }
+.sst-certification .certification-logo { width: 48px; height: 48px; }
+.sst-certification .certification-logo img { border-radius: 50%; }
+.employer-center { margin-top: 6px; font-size: 13px; color: var(--muted); }
+.employer-center a, .certification-link, .additional-credential a, .illustration-credit a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.employer-center a:hover, .certification-link:hover, .additional-credential a:hover { color: var(--accent); }
+.certification-link { display: inline-block; }
+.additional-credential { margin-top: 20px; font-size: 12px; color: var(--muted); }
+.header { justify-content: space-between; }
+.footer p { margin-right: auto; }
+.illustration-credit { margin-top: 24px; font-size: 11px; color: var(--muted); text-align: right; }
+@media (max-width: 760px) { .header { justify-content: flex-end; } .illustration-credit { text-align: left; } }
 .atos-employer { margin-top: 44px; }
 .employer-roles { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 30px; }
 .employer-period { font-size: 11px; color: var(--accent); margin-bottom: 8px; }
@@ -182,7 +192,7 @@
   .button { transition: none; }
 }
 
-/* Photos au recto, récit personnel au verso. */
+/* Illustrations de Game-icons.net au recto, récit personnel au verso. */
 .passion { padding: 0; border: 0; background: transparent; perspective: 1100px; }
 .passion:hover { transform: none; }
 .passion-flip { display: block; width: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
@@ -190,9 +200,12 @@
 .passion-inner { display: grid; min-height: 330px; border-radius: inherit; transform-style: preserve-3d; transition: transform .65s cubic-bezier(.2,.7,.2,1); }
 .passion-flip.is-flipped .passion-inner { transform: rotateY(180deg); }
 .passion-front, .passion-back { grid-area: 1 / 1; min-width: 0; border-radius: inherit; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
-.passion-front { position: relative; background: #73645c; transform: rotateY(0deg); }
-.passion-front img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
-.passion-caption { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 28px 22px; color: #fff; background: linear-gradient(transparent 35%, #211812e8); }
+.passion-front { position: relative; background: #f1d9cc; border: 1px solid #d8c5b5; transform: rotateY(0deg); }
+.passion-badminton .passion-front { background: #e9e9d6; }
+.passion-ski .passion-front { background: #e7ece9; }
+.passion-games .passion-front { background: #f5e2c5; }
+.passion-front img { position: absolute; top: 38px; left: 20%; display: block; width: 60%; height: 155px; object-fit: contain; }
+.passion-caption { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 28px 22px; color: var(--ink); }
 .passion-title { display: block; font-family: var(--serif); font-size: clamp(22px, 2.1vw, 28px); line-height: 1.15; letter-spacing: -.5px; margin-top: 8px; }
 .passion-number { font-size: 10px; }
 .passion-hint { display: block; font-size: 11px; margin-top: 18px; }

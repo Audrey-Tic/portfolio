@@ -42,13 +42,15 @@ Les responsabilités transverses chez CGI et la qualification de Sauveteuse seco
 
 La page contient une balise robots `noindex, nofollow, noimageindex` pour demander aux moteurs de recherche de ne pas l’indexer. Aucun blocage par `robots.txt` n’est ajouté : les moteurs doivent pouvoir lire cette consigne. Le site reste public et accessible par son lien ; une éventuelle désindexation prend effet après un nouveau passage du moteur.
 
-## Photographies des loisirs
+## Illustrations des loisirs
 
-Photos non générées, conservées localement sous `assets/leisure/`, sous licence Unsplash :
+Illustrations vectorielles du projet Game-icons.net, sous licence CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), avec attribution visible sur le site. Les dessins sont conservés localement, sans génération par IA. Seules la couleur et la transparence du fond sont adaptées.
 
-- Badminton : frame harirak - https://unsplash.com/photos/UR_mNYmpwco
-- Ski : Robert Katzki - https://unsplash.com/photos/ruWJ1-WHce8
-- Jeux de société : Amos K - https://unsplash.com/photos/VVCd8C4mtnw
-- Couture : Alexander Grey - https://unsplash.com/photos/TAZUc51iPUM
+- Badminton : Shuttlecock, Delapouite - https://game-icons.net/1x1/delapouite/shuttlecock.html
+- Ski : Skier, Delapouite - https://game-icons.net/1x1/delapouite/skier.html
+- Jeux : Rolling dices, Delapouite - https://game-icons.net/1x1/delapouite/rolling-dices.html
+- Couture : Sewing machine, Caro Asercion - https://game-icons.net/1x1/caro-asercion/sewing-machine.html
 
-Les tuiles se retournent au survol, à la prise de focus au clavier ou au toucher. Les préférences de réduction des animations sont respectées.
+Les tuiles se retournent au survol, au clavier et au toucher. Les préférences de réduction des animations sont respectées. Le logo CGI centré reprend l’image originale intégrée dans un SVG dont le cadrage retire les marges blanches asymétriques.
+
+Les liens de certification sont fournis par Audrey. Les certifications agiles Product Owner et Scrum Master renvoient vers son profil Scrum.org : https://www.scrum.org/user/805818. Les intitulés Adobe Experience Manager et Adobe Analytics ont été vérifiés sur les pages de validation fournies.
