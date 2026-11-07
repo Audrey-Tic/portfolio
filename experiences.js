@@ -1,12 +1,11 @@
-/* Informations issues du CV et précisions apportées par Audrey. Logos extraits du CV. */
+/* Informations issues du CV et précisions apportées par Audrey. Employeurs présentés dans index.html. */
 window.portfolioMarkets = {
   "banking": "Banque & assurance",
   "aerospace": "Aéronautique",
   "retail": "Retail & grande consommation",
   "automotive": "Automobile",
   "technology": "Technologie & logiciels",
-  "tourism": "Tourisme & loisirs",
-  "agency": "Agence digitale"
+  "tourism": "Tourisme & loisirs"
 };
 
 window.portfolioExperiences = [
@@ -364,62 +363,6 @@ window.portfolioExperiences = [
     ],
     "market": "automotive",
     "logo": "./assets/logos/bmw.png"
-  },
-  {
-    "company": "Atos",
-    "monogram": "At",
-    "color": "blue",
-    "role": "Marketing global · Innovation · Digital",
-    "period": "2015 — 2020",
-    "categories": [
-      "marketing",
-      "data"
-    ],
-    "summary": "Marketing digital, ateliers d’innovation et marketing global des offres.",
-    "context": "Trois fonctions successives : consultante marketing digital (2015–2016), consultante innovation (2016–2017), puis responsable marketing global des offres (2017–2020).",
-    "missions": [
-      "Définition et exécution des plans marketing et structuration des campagnes commerciales.",
-      "Création des propositions de valeur communes avec SAP, Google Cloud et Dell EMC et gestion des fonds partenaires.",
-      "Pilotage des lancements de produits et des événements mondiaux : Google Next, SAPPHIRE NOW, SAP TechEd.",
-      "Organisation de plus de 30 ateliers clients au centre d’innovation et conception de démonstrations adaptées.",
-      "Mise en œuvre de la stratégie digitale : web, social media, retargeting, emailings et campagnes Eloqua.",
-      "Construction de la stratégie SEO, amélioration de la vitesse des pages et analyse du trafic."
-    ],
-    "tools": [
-      "Eloqua",
-      "Oktopost",
-      "Google Analytics",
-      "SEO",
-      "Marketing B2B"
-    ],
-    "market": "technology",
-    "logo": "./assets/logos/atos.png"
-  },
-  {
-    "company": "Plan.net",
-    "monogram": "p.",
-    "color": "orange",
-    "role": "Consultante analytics / SEO",
-    "period": "2014 — 2015",
-    "categories": [
-      "data",
-      "marketing"
-    ],
-    "summary": "Coordination des projets digitaux et référencement pour des clients B2C.",
-    "context": "Une expérience en agence au croisement de la coordination de projets, de la mesure et du référencement.",
-    "missions": [
-      "Suivi et coordination des projets digitaux pour les clients B2C.",
-      "Mesure de l’audience web avec Xiti.",
-      "Création de pages optimisées pour le référencement : contenu et stratégie de liens."
-    ],
-    "tools": [
-      "Xiti",
-      "SEO",
-      "Contenu",
-      "Coordination"
-    ],
-    "market": "agency",
-    "logo": "./assets/logos/plan-net.png"
   }
 ];
 

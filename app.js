@@ -43,7 +43,8 @@
     const companyLine = element('div', 'company-line');
     companyLine.append(element('h3', '', experience.company));
     if (experience.current) companyLine.append(element('span', 'current-badge', 'En cours'));
-    identity.append(companyLine, element('p', 'experience-role', experience.role));
+    const kind = experience.market ? 'Client' : 'Association';
+    identity.append(element('p', 'experience-kind', kind), companyLine, element('p', 'experience-role', experience.role));
     const meta = element('div', 'experience-meta');
     meta.append(element('span', 'experience-period', experience.period));
     meta.append(element('span', 'experience-category', experience.market ? markets[experience.market] : 'Bénévolat · Culture & éducation'));
