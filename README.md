@@ -26,6 +26,10 @@ Les informations professionnelles proviennent du CV fourni. Le bénévolat, les 
 
 ## GitHub Pages
 
-Les chemins sont relatifs : le site fonctionne aussi sous `/portfolio/`. Aucun build n’est nécessaire. Après validation et push, GitHub Pages pourra publier la racine de la branche choisie depuis les réglages du dépôt, dans **Settings → Pages → Deploy from a branch**. Le fichier `.nojekyll` permet de servir les fichiers tels quels.
+Site : https://audrey-tic.github.io/portfolio/
 
-Aucune publication automatique n’est configurée. Cette version a été préparée uniquement en local.
+Chaque push sur `main` déclenche le workflow `.github/workflows/deploy-pages.yml`. Il vérifie la syntaxe JavaScript, prépare les fichiers statiques, puis les déploie sur GitHub Pages. Il peut aussi être lancé manuellement depuis l’onglet **Actions** du dépôt.
+
+GitHub Pages utilise **GitHub Actions** comme source de publication dans **Settings → Pages → Build and deployment**. Aucun secret supplémentaire ni installation de dépendances n’est nécessaire.
+
+Les chemins sont relatifs : le site fonctionne sous `/portfolio/`. Seuls les fichiers de la page et le dossier `assets` sont publiés ; les outils de prévisualisation et le README restent dans le dépôt. Le fichier `.nojekyll` permet de servir les fichiers tels quels.
