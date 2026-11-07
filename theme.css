@@ -193,6 +193,13 @@
 }
 
 /* Illustrations de Game-icons.net au recto, récit personnel au verso. */
+.footer { flex-wrap: wrap; }
+.illustration-credits { flex-basis: 100%; font-size: 11px; color: var(--muted); }
+.illustration-credits summary { width: fit-content; cursor: pointer; }
+.illustration-credits summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.illustration-credits .illustration-credit { margin-top: 12px; text-align: left; }
+.illustration-credits p { margin: 0; }
+.illustration-credits ul { margin: 8px 0 0; padding-left: 18px; }
 .passion { padding: 0; border: 0; background: transparent; perspective: 1100px; }
 .passion:hover { transform: none; }
 .passion-flip { display: block; width: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }

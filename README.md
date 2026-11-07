@@ -44,7 +44,7 @@ La page contient une balise robots `noindex, nofollow, noimageindex` pour demand
 
 ## Illustrations des loisirs
 
-Illustrations vectorielles du projet Game-icons.net, sous licence CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), avec attribution visible sur le site. Les dessins sont conservés localement, sans génération par IA. Seules la couleur et la transparence du fond sont adaptées.
+Illustrations vectorielles du projet Game-icons.net, sous licence CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), avec attribution accessible dans le volet « Crédits des illustrations » en pied de page, y compris pour cet usage personnel et non commercial. Les dessins sont conservés localement, sans génération par IA. Seules la couleur et la transparence du fond sont adaptées.
 
 - Badminton : Shuttlecock, Delapouite - https://game-icons.net/1x1/delapouite/shuttlecock.html
 - Ski : Skier, Delapouite - https://game-icons.net/1x1/delapouite/skier.html
