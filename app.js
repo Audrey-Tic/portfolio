@@ -185,4 +185,40 @@
   }, { passive: true });
   updateNavigation();
   document.querySelector('#year').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('.passion-flip').forEach(button => {
+    let hovered = false;
+    let focused = false;
+    let pinned = false;
+    const front = button.querySelector('.passion-front');
+    const back = button.querySelector('.passion-back');
+    function updateFlip() {
+      const flipped = hovered || focused || pinned;
+      button.classList.toggle('is-flipped', flipped);
+      button.setAttribute('aria-expanded', String(flipped));
+      front.setAttribute('aria-hidden', String(flipped));
+      back.setAttribute('aria-hidden', String(!flipped));
+    }
+    button.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'mouse') { hovered = true; updateFlip(); }
+    });
+    button.addEventListener('pointerleave', () => { hovered = false; updateFlip(); });
+    button.addEventListener('focus', () => {
+      focused = button.matches(':focus-visible');
+      updateFlip();
+    });
+    button.addEventListener('blur', () => { focused = false; pinned = false; updateFlip(); });
+    button.addEventListener('click', () => {
+      pinned = !button.classList.contains('is-flipped');
+      hovered = false;
+      focused = false;
+      updateFlip();
+    });
+    button.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        hovered = focused = pinned = false;
+        updateFlip();
+      }
+    });
+  });
 })();

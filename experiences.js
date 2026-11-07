@@ -14,7 +14,7 @@ window.portfolioExperiences = [
     "monogram": "A",
     "color": "blue",
     "role": "Consultante SEO / GEO & marketing",
-    "period": "Oct. — déc. 2025 · Depuis sept. 2026",
+    "period": "Oct. - déc. 2025 · Depuis sept. 2026",
     "current": true,
     "categories": [
       "marketing",
@@ -24,7 +24,7 @@ window.portfolioExperiences = [
     "projects": [
       {
         "title": "SEO / GEO",
-        "period": "Sept. 2026 — aujourd’hui",
+        "period": "Sept. 2026 - aujourd’hui",
         "context": "Capitaliser sur les initiatives et outils existants pour proposer une feuille de route SEO / GEO à horizon 2027.",
         "missions": [
           "Réalisation d’un benchmark des solutions existantes.",
@@ -34,7 +34,7 @@ window.portfolioExperiences = [
       },
       {
         "title": "Salesforce Marketing Cloud",
-        "period": "Oct. — déc. 2025",
+        "period": "Oct. - déc. 2025",
         "context": "Diagnostiquer l’existant et analyser l’environnement data et marketing afin de prioriser les cas d’usage et de définir la cible.",
         "missions": [
           "Réalisation du diagnostic fonctionnel et technique de Salesforce Marketing Cloud.",
@@ -62,7 +62,7 @@ window.portfolioExperiences = [
     "monogram": "c",
     "color": "orange",
     "role": "Lead Change Manager",
-    "period": "Juil. 2025 — août 2026",
+    "period": "Juil. 2025 - août 2026",
     "categories": [
       "change"
     ],
@@ -87,7 +87,7 @@ window.portfolioExperiences = [
     "monogram": "D",
     "color": "green",
     "role": "Product Owner",
-    "period": "Oct. 2024 — juil. 2025",
+    "period": "Oct. 2024 - juil. 2025",
     "categories": [
       "product",
       "data",
@@ -117,7 +117,7 @@ window.portfolioExperiences = [
     "monogram": "a",
     "color": "red",
     "role": "Consultante analytics & Business Analyst",
-    "period": "2023 · Mars 2024 — oct. 2025",
+    "period": "2023 · Mars 2024 - oct. 2025",
     "categories": [
       "data",
       "product",
@@ -153,7 +153,7 @@ window.portfolioExperiences = [
     "monogram": "S",
     "color": "blue",
     "role": "Consultante analytics",
-    "period": "Oct. 2024 — janv. 2025",
+    "period": "Oct. 2024 - janv. 2025",
     "categories": [
       "data",
       "marketing"
@@ -177,7 +177,7 @@ window.portfolioExperiences = [
     "monogram": "M",
     "color": "blue",
     "role": "Consultante change & Business Analyst",
-    "period": "Déc. 2023 — mars 2024",
+    "period": "Déc. 2023 - mars 2024",
     "categories": [
       "data",
       "product",
@@ -208,7 +208,7 @@ window.portfolioExperiences = [
     "monogram": "A",
     "color": "blue",
     "role": "Consultante Change Management",
-    "period": "2022 — 2023",
+    "period": "2022 - 2023",
     "categories": [
       "change",
       "product",

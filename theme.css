@@ -65,8 +65,8 @@
 .experience-summary:hover { background: #faf0e7; }
 .experience-summary:focus-visible { outline-offset: -5px; }
 .company-mark { height: 62px; width: 96px; border-radius: 12px; overflow: hidden; }
-.company-mark.has-logo { background: #fff; border: 1px solid #f0e7df; padding: 9px; }
-.client-logo { width: 100%; height: 100%; object-fit: contain; }
+.company-mark.has-logo { display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid #f0e7df; padding: 9px; }
+.client-logo { display: block; min-width: 0; min-height: 0; width: 100%; height: 100%; object-fit: contain; }
 .company-line { flex-wrap: wrap; }
 .company-line h3 { font-size: 18px; line-height: 1.4; }
 .current-badge { font-size: 10px; }
@@ -181,3 +181,34 @@
 @media (prefers-reduced-motion: reduce) {
   .button { transition: none; }
 }
+
+/* Photos au recto, récit personnel au verso. */
+.passion { padding: 0; border: 0; background: transparent; perspective: 1100px; }
+.passion:hover { transform: none; }
+.passion-flip { display: block; width: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.passion-flip:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.passion-inner { display: grid; min-height: 330px; border-radius: inherit; transform-style: preserve-3d; transition: transform .65s cubic-bezier(.2,.7,.2,1); }
+.passion-flip.is-flipped .passion-inner { transform: rotateY(180deg); }
+.passion-front, .passion-back { grid-area: 1 / 1; min-width: 0; border-radius: inherit; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.passion-front { position: relative; background: #73645c; transform: rotateY(0deg); }
+.passion-front img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.passion-caption { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 28px 22px; color: #fff; background: linear-gradient(transparent 35%, #211812e8); }
+.passion-title { display: block; font-family: var(--serif); font-size: clamp(22px, 2.1vw, 28px); line-height: 1.15; letter-spacing: -.5px; margin-top: 8px; }
+.passion-number { font-size: 10px; }
+.passion-hint { display: block; font-size: 11px; margin-top: 18px; }
+.passion-back { display: flex; flex-direction: column; justify-content: center; padding: 32px 22px; border: 1px solid #d8c5b5; transform: rotateY(180deg); background: #f1d9cc; }
+.passion-badminton .passion-back { background: #e9e9d6; }
+.passion-ski .passion-back { background: #e7ece9; }
+.passion-games .passion-back { background: #f5e2c5; }
+.passion-copy { display: block; font-size: 14px; line-height: 1.75; margin-top: 20px; }
+.contact-links { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 20px 30px; }
+.contact-phone { font-size: 21px; font-variant-numeric: tabular-nums; text-decoration: underline; text-underline-offset: 6px; }
+@media (max-width: 1000px) and (min-width: 761px) { .passions-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px) {
+  .passion-inner { min-height: 345px; }
+  .passion-caption, .passion-back { padding: 26px 17px; }
+  .passion-copy { font-size: 13px; line-height: 1.65; }
+  .contact-links { align-items: flex-start; flex-direction: column; gap: 25px; }
+}
+@media (max-width: 380px) { .passions-grid { grid-template-columns: 1fr; } .passion-inner { min-height: 320px; } }
+@media (prefers-reduced-motion: reduce) { .passion-inner { transition: none; } }
