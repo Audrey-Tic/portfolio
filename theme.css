@@ -60,6 +60,7 @@
 .hero-footnote { font-size: 12px; }
 .hero-footnote strong { color: var(--accent); font-size: 28px; }
 .expertise-band { background: #f4e4d5; border-color: #edcdb8; }
+.expertise-band p { flex-wrap: wrap; white-space: normal; }
 .section-heading > p { font-size: 14px; }
 .experience-toolbar { padding: 22px 24px; margin-bottom: 24px; border: 1px solid var(--line); background: #f8ecdf; border-radius: 18px; }
 .filter { font-size: 12px; padding: 9px 16px; min-height: 40px; border-color: #d9cabc; background: #fffcf880; }
