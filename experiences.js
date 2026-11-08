@@ -29,7 +29,8 @@ window.portfolioExperiences = [
         "missions": [
           "Réalisation d’un benchmark des solutions existantes.",
           "Analyse des dimensions techniques et éditoriales.",
-          "Formulation de recommandations et construction de la trajectoire SEO / GEO."
+          "Formulation de recommandations et construction de la trajectoire SEO / GEO.",
+          "Organisation des instances de pilotage, suivi de l’avancement et des risques."
         ]
       },
       {
@@ -41,7 +42,8 @@ window.portfolioExperiences = [
           "Analyse de la gouvernance data, des accès, des Business Units et du modèle de données.",
           "Qualification et priorisation des cas d’usage selon leur impact et leur complexité.",
           "Construction d’une roadmap de transformation et formulation des recommandations stratégiques.",
-          "Animation des ateliers avec les parties prenantes métier et IT."
+          "Animation des ateliers avec les parties prenantes métier et IT.",
+          "Organisation des instances de pilotage, suivi de l’avancement et des risques."
         ]
       }
     ],
@@ -72,7 +74,9 @@ window.portfolioExperiences = [
       "Accompagnement des changements technologiques et organisationnels.",
       "Mise en avant des KPIs clés et des réussites du programme.",
       "Accompagnement de la transition des rôles et responsabilités au sein des équipes IT.",
-      "Contribution à l’amélioration de l’efficacité de la DSI au service des métiers."
+      "Contribution à l’amélioration de l’efficacité de la DSI au service des métiers.",
+      "Établissement du plan de charge et chiffrage des activités.",
+      "Élaboration du plan de risques."
     ],
     "tools": [
       "Conduite du changement",
@@ -100,12 +104,15 @@ window.portfolioExperiences = [
       "Accompagnement de l’implémentation d’Adobe Analytics avec les équipes techniques.",
       "Planification de la migration en coordination avec les équipes pluridisciplinaires.",
       "Supervision des éléments SEO et de tracking pour la continuité de la mesure.",
-      "Coordination et animation des formations aux utilisateurs finaux."
+      "Coordination et animation des formations aux utilisateurs finaux.",
+      "Suivi du backlog dans Jira.",
+      "Gestion des risques du projet."
     ],
     "tools": [
       "AEM",
       "Liferay",
       "Adobe Analytics",
+      "Jira",
       "SEO",
       "Formation"
     ],
@@ -144,7 +151,9 @@ window.portfolioExperiences = [
       "Analyse des paramétrages Google Analytics et des tags GTM.",
       "Vérification des appels GTM, des éventuelles pénalités SEO et de la configuration des cookies.",
       "Signalement des non-conformités RGPD identifiées.",
-      "Rédaction d’un rapport d’analyse et construction d’une roadmap de tracking des parcours."
+      "Rédaction d’un rapport d’analyse et construction d’une roadmap de tracking des parcours.",
+      "Construction du plan de charge.",
+      "Management d’une consultante."
     ],
     "outcome": "L’intervention a permis à l’ANCV de retrouver une mesure cohérente du trafic et des KPIs fiables pour orienter l’évolution des sites et applications."
   },
@@ -221,7 +230,8 @@ window.portfolioExperiences = [
       "Gestion du backlog et animation des weekly et PI Plannings aux côtés du RTE.",
       "Création des supports de formation et des contenus web.",
       "Définition des cas d’usage et personas.",
-      "Analyse des usages et création des rapports dans Data Studio avec Google Analytics."
+      "Analyse des usages et création des rapports dans Data Studio avec Google Analytics.",
+      "Organisation des instances de pilotage, suivi de l’avancement et des risques."
     ],
     "tools": [
       "SAFe",
