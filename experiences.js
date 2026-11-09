@@ -124,7 +124,7 @@ window.portfolioExperiences = [
     "monogram": "a",
     "color": "red",
     "role": "Consultante analytics & Business Analyst",
-    "period": "2023 · Mars 2024 - oct. 2025",
+    "period": "Mars 2024 - oct. 2025",
     "categories": [
       "data",
       "product",
@@ -142,7 +142,7 @@ window.portfolioExperiences = [
     ],
     "market": "tourism",
     "logo": "./assets/logos/ancv.png",
-    "context": "Deux interventions : un audit analytics en 2023 sur huit sites et deux applications, puis la mise en place de plans de tracking sur neuf dispositifs de mars 2024 à octobre 2025.",
+    "context": "Deux interventions : un audit analytics sur huit sites et deux applications, puis la mise en place de plans de tracking sur neuf dispositifs de mars 2024 à octobre 2025.",
     "missions": [
       "Définition des objectifs de conversion et des indicateurs clés de performance.",
       "Création des plans de tags dans Google Tag Manager.",
